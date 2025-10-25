@@ -4,7 +4,7 @@ A robust, production-ready pipeline for detecting fake news using both tradition
 
 ---
 
-## 🚀 Features
+## Features
 - **Multiple Models:**
   - TF-IDF + Logistic Regression (fast, interpretable)
   - BERT-based neural network (high accuracy)
@@ -17,7 +17,7 @@ A robust, production-ready pipeline for detecting fake news using both tradition
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 [Data] --(preprocessing)--> [TF-IDF Model] --\
@@ -33,7 +33,7 @@ A robust, production-ready pipeline for detecting fake news using both tradition
 
 ---
 
-## ⚡ Quickstart
+## Quickstart
 
 ### 1. Clone the Repository
 ```bash
@@ -61,7 +61,7 @@ streamlit run app/streamlit_app.py
 
 ---
 
-## 🏋️ Model Training
+## Model Training
 
 ### Train TF-IDF Model
 ```bash
@@ -84,7 +84,7 @@ python src/train.py --model both
 
 ---
 
-## 🔍 Prediction & Inference
+## Prediction & Inference
 
 ### From Python
 ```python
@@ -103,7 +103,7 @@ print(result)
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 ├── app/
@@ -127,14 +127,14 @@ print(result)
 
 ---
 
-## 📝 Data Preprocessing
+## Data Preprocessing
 - **Text cleaning:** Lowercasing, URL/email removal, punctuation, etc.
 - **TF-IDF:** Additional stemming and stopword removal
 - **BERT:** Truncation to 512 tokens
 
 ---
 
-## 🧪 Evaluation
+## Evaluation
 - Accuracy, classification report, and confidence scores are shown in the app and logs.
 - Example expected accuracies:
   - TF-IDF: ~90%
@@ -143,14 +143,14 @@ print(result)
 
 ---
 
-## 🛠️ Customization
+## Customization
 - **Add new models:** Extend `src/model.py` and update `src/inference.py`
 - **Change dataset:** Place new CSVs in `data/` and adjust `src/data_utils.py` if needed
 - **Tune hyperparameters:** Edit `src/train.py` or pass CLI args
 
 ---
 
-## 🐳 Deployment
+## Deployment
 - **Docker Compose:** Handles all dependencies, caching, and healthchecks
 - **Environment Variables:**
   - `TRANSFORMERS_CACHE` for HuggingFace models
@@ -158,7 +158,7 @@ print(result)
 
 ---
 
-## ❓ FAQ
+## FAQ
 
 **Q: Can I use my own dataset?**
 - Yes! Place your CSV in `data/` and adjust `src/data_utils.py:load_external_dataset()` as needed.
