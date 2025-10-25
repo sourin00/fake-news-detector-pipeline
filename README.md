@@ -59,7 +59,9 @@ pip install -r requirements.txt
 streamlit run app/streamlit_app.py
 ```
 
----
+## Download Trained Models
+Click on this [Link](https://drive.google.com/drive/folders/1ulOvoqsBunVndOVOmgDTTyqiBgrKG8nJ?usp=drive_link) to download the pre trained models folder and paste in the root directory of the project.
+Once done you can run the application locally without re training the models which is a time taking process.
 
 ## Model Training
 
